@@ -1,20 +1,29 @@
 *{
     background-color: black;
-    font-family: Helvetica Neue;
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
     margin-top: 0%;
 }
+p{
+    margin: 0%;
+    padding: 0%;
+    display: inline-block;
+}
+body{
+    height: 100vh;
+}
 .container{
     display: grid;
-    grid-template-columns: 0.0fr 1.33fr 1.1fr;
-    
+    grid-template-columns: 350px 1.33fr 1.1fr;
+
 }
-.home{
-    margin: 2px 0px 0px 84px;
+.sidebar{
+    margin: 2px 0px 0px 49px;
     display: flex;
     flex-direction: column;
-    border: 0.09px solid rgb(39, 38, 38);
     margin-top: 0%;
+    justify-content: space-between;
+    align-items: center;
 }
 .x{
     font-size: 29px;
@@ -27,16 +36,18 @@
     border: none;
     border-radius: 2px;
     padding: 20px 5px 0px 0px;
-    color: rgba(231, 233, 234, 1.00);
+    color: rgb(11, 88, 126);
     margin-left: 5px;
     cursor: pointer;
     border-radius: 30px;
+}
+#icons{
+    color: rgb(236, 245, 236);
 }
 .icon_text{
     display: inline-block;
     font-size: 19px;
     padding-left: 17px;
-    font-weight: bolder;
     color: rgba(231, 233, 234, 1.00);
     cursor: pointer;
     
@@ -63,18 +74,21 @@
     border-radius: 150px;
     font-size: 15px;
     font-weight: bolder;
-    width: 270px;
-    margin-top: 40px;
+    width: 250px;
     cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
     
 }
 .tex1{
     display: inline-block;
     vertical-align: top;
     margin: 0%;
-    width: 120px;
     margin-left: 7px;
     cursor: pointer;
+    font-size: small;
 }
 .tex2{
     display: inline-block;
@@ -82,6 +96,7 @@
     margin-left: 7px;
     vertical-align: middle;
     color: grey;
+    font-size: small;
     cursor: pointer;
 }
 .main{
@@ -133,6 +148,7 @@
 #subIcon{
     margin: 11px 11px 11px 11px ;
     cursor: pointer;
+    color: rgb(24, 99, 212);
     
 }
 .btn4{
@@ -153,17 +169,19 @@
     justify-content: center;
     border: 0.09px solid rgb(39, 38, 38);
     cursor: pointer;
+    padding:13px 0px ;
 }
 .tex5{
-    margin-top: 3%;
     color: rgb(29, 155, 240);
     font-size: 15px;
 }
 .sec3{
-    display: grid;
-    grid-template-columns: 65px 1fr;
-    padding-top:16px ;
+    display: flex;
+    padding:16px ;
     cursor: pointer;
+    flex-direction: column;
+
+
 }
 .immg3{
     width: 40px;
@@ -171,9 +189,7 @@
     border-radius: 500%;
     display: inline-block;
     margin: 0px 0px 0px 16px;
-}
-.tex6{
-    
+
 }
 #subIcon2{
     margin-left: 250px;
@@ -182,15 +198,76 @@
     width: 516px;
     height: 486px;
     border-radius: 23px;
-    margin-right: 15px;
-    margin-top: 15px;
     cursor: pointer;
+    display: inline-block;
 }
-#subIcon3{
-    margin: 3px 70px 0px 10px;
+.conTex{
+    display: flex;
+    flex-direction: column;
+    flex:2;
+}
+.texSec{
+    display: flex;
+    flex-direction: row;
+}
+.imgWid{
+    background-color: rgb(14, 17, 17);
+    border: 1px solid aqua;
+    display: flex;
+    flex-direction: column;
+    width: 73px;
+    padding-bottom: 340px;
+}
+.search{
+    background-color: rgb(0, 0, 0);
+    padding: 10px 60px 0px 40px;
+}
+.inp{
+    padding: 17px 170px 17px 12px;
+    display: flex;
+    border: none;
+    outline: none;
+    border-radius: 77px;
+    background-color: rgb(44, 41, 41);
+    background-image: url('');
+}
+.inp:active{
+    border: 2px solid cyan;
+    background-color: rgb(24, 23, 23);
+}
+.side_sub{
+    display: flex;
+    flex-direction: column;
+}
+.side_box1{
+    display: flex;
+    flex-direction: column;
+    border: 0.09px solid rgb(66, 64, 64);
+    border-radius: 15px;
+    padding: 16px 16px;
+    margin: 16px 0px 0px 0px;
+}
+.btn5{
+    
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 6px 17px;
+    border-radius: 100px;
+    font-weight: bolder;
+    font-size: 17px;
+    background-color: rgb(39, 164, 214);
     cursor: pointer;
+    margin: 0%;
 }
-#subIcon4{
-    margin: 3px 60px 0px 0px;
-    cursor: pointer;
+.side_box2{
+    display: flex;
+    flex-direction: column;
+    border: 0.09px solid rgb(66, 64, 64);
+    border-radius: 15px;
+    padding: 0px 0px;
+    margin: 16px 0px 0px 0px;
 }
+.icon:hover{
+    background-color: aqua;
+}
+/* Sir hover m bhi problem ari h */
