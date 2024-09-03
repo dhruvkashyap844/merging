@@ -222,17 +222,30 @@ body{
     padding: 10px 60px 0px 40px;
 }
 .inp{
-    padding: 17px 170px 17px 12px;
+    padding: 17px 150px 17px 12px;
     display: flex;
-    border: none;
-    outline: none;
     border-radius: 77px;
     background-color: rgb(44, 41, 41);
     background-image: url('');
+    box-shadow: none;
+    border: none;
+    outline-style: none;    
+    transition: 0.2s;
 }
-.inp:active{
-    border: 2px solid cyan;
-    background-color: rgb(24, 23, 23);
+.searchI{
+    background-color: rgb(44, 41, 41);
+    display: flex;
+    align-items: center;
+    border-radius: 77px;
+    padding-left: 10px;
+    
+}
+.searchI:focus{
+    /* border: 2px solid cyan; */
+    outline-color:  cyan ;
+    outline-style: solid;
+    background-color: rgb(67, 60, 60);
+
 }
 .side_sub{
     display: flex;
@@ -256,6 +269,7 @@ body{
     font-size: 17px;
     background-color: rgb(39, 164, 214);
     cursor: pointer;
+    fle
     margin: 0%;
 }
 .side_box2{
