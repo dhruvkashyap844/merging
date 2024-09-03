@@ -143,7 +143,6 @@ body{
 }
 .icon_sec{
     display: flex;
-    margin: 10px 0px 0px 46px;
 }
 #subIcon{
     margin: 11px 11px 11px 11px ;
@@ -159,8 +158,6 @@ body{
     font-weight: bolder;
     font-size: 17px;
     background-color: rgb(29, 97, 143);
-    margin-left: 210px;
-    margin-bottom: 10px;
     cursor: pointer;
     
 }
@@ -193,6 +190,8 @@ body{
 }
 #subIcon2{
     margin-left: 250px;
+
+
 }
 .immg4{
     width: 516px;
@@ -271,3 +270,88 @@ body{
     background-color: aqua;
 }
 /* Sir hover m bhi problem ari h */
+.secBtn{
+    flex: 1;
+    padding: 0%;
+    border: none;
+    font-size: medium;
+    font-weight: 500;
+    transition: 0.2s;
+}
+.secBtn:hover{
+    background-color: rgb(22, 22, 21);
+}
+.sec01{
+    height: 50px;
+    display: flex;
+}
+.sec02{
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+}
+.immg0{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: aqua;
+}
+.l1{
+    padding: 10px;
+}
+.r1{
+    padding: 20px 10px 10px 10px;
+    flex: 1;
+}
+.icon01{
+    display: flex;
+    justify-content: space-between;
+}
+.sec03{
+    padding: 10px;
+    display: flex;
+}
+.sec03:hover{
+    background-color: rgb(8, 8, 8);
+}
+.l2{
+    background-color: aqua;
+    display: flex;
+}
+.r2{
+    
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 0px 10px 10px 10px;
+}
+.r20{
+
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+.bigImg{
+    width: 500px;
+    border-radius: 5%;
+    display: flex;
+    flex: 1;
+    padding: 10px 0px ;
+}
+.inp1{
+    outline: none;
+    border: none;
+    font-size: larger;
+}
+.show{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.01px solid rgb(29, 27, 27) ;
+    padding: 14px 0px;
+    color: rgb(34, 152, 207);
+    transition: 0.2s;
+}
+.show:hover{
+    background-color: rgb(8, 8, 8);
+}
