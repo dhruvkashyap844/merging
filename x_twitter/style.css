@@ -267,7 +267,6 @@ body{
     margin: 16px 0px 0px 0px;
 }
 .icon:hover{
-    background-color: aqua;
 }
 /* Sir hover m bhi problem ari h */
 .secBtn{
@@ -315,7 +314,6 @@ body{
     background-color: rgb(8, 8, 8);
 }
 .l2{
-    background-color: aqua;
     display: flex;
 }
 .r2{
@@ -354,4 +352,21 @@ body{
 }
 .show:hover{
     background-color: rgb(8, 8, 8);
+}
+
+#subIcon1{
+    margin: 11px 11px 11px 11px ;
+    cursor: pointer;
+    color: rgb(84, 85, 87);
+    font-size: 14px;
+}
+.iconTex{
+    font-size: 14px;
+    color: rgb(91, 93, 94);
+}
+.imgIcon{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex: 1;
 }
