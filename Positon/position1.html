@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0%;
+    }
+    body{
+        height: 200vh;
+    }
+    nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        /* bottom: 1px ; */
+        /* width: 100px; */
+        height: 100px;
+        width: 100%;
+        background-color: rgb(108, 108, 83);
+        color: aliceblue;
+        z-index: 2;
+        
+    }
+    .sideBar{
+        position: fixed;
+        top: 100px;
+        left: 0;
+        /* bottom: 1px ; */
+        /* width: 100px; */
+        height: 100%;
+        width: 100px;
+        background-color: rgb(167, 167, 69);
+        color: aliceblue;
+        
+
+    }
+    .box1{
+        
+        padding-top: 150px;
+        width: 60px;
+        height: 10px;
+        background-color: aquamarine;
+        padding: 20px;
+        margin: 150px 0px 0px 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bolder;
+        border: 2px solid gray;
+        color: black;
+    }
+    .abs{
+        position: absolute;
+        left:300px;
+        z-index: 1;
+    }
+</style>
+<body>
+    <nav>
+        NAV
+    </nav>
+    <div class="sideBar">
+        Side bar
+    </div>
+    <div class="box1">BOX 1</div>
+
+    <!-- Absolute -->
+    <div class="abs"> 
+        Absolute
+    </div>
+</body>
+</html>

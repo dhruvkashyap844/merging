@@ -1,0 +1,134 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    display: inline-block;
+    padding: 0%;
+    margin: 0%;
+}
+.container{
+
+}
+body {
+  background-color: #0f0f0f;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  padding: 0px 16px;
+  justify-content: space-between;
+  background-color: rgb(69, 89, 112);
+}
+.navSec1 {
+  display: flex;
+  align-items: center;
+}
+#icon1 {
+  font-size: larger;
+  padding: 10px;
+  transition: 0.01s;
+  border-radius: 100px;
+  cursor: pointer;
+  color: whitesmoke;
+}
+#icon1:hover {
+  background-color: gray;
+}
+.mainIcon {
+  width: 90px;
+  height: 20px;
+  padding: 18px 16px;
+  cursor: pointer;
+}
+.navSec2 {
+}
+.navInp {
+  padding: 8px 10px;
+  border-radius: 20px;
+  outline-style: none;
+  border: none;
+  outline: 1px solid rgb(71, 70, 70);
+  font-size: large;
+  font-weight: 500;
+  background-color: #161515;
+  color: rgb(255, 254, 253);
+  /* background-image: url(https://www.google.com/search?q=search+logo&oq=sea&gs_lcrp=EgZjaHJvbWUqDAgCEAAYQxiABBiKBTIGCAAQRRg5MgwIARAAGEMYgAQYigUyDAgCEAAYQxiABBiKBTIMCAMQABhDGIAEGIoFMgwIBBAAGEMYgAQYigUyBggFEEUYPTIGCAYQRRg8MgYIBxBFGDzSAQgyNDcxajBqN6gCCLACAQ&sourceid=chrome&ie=UTF-8#vhid=c2g7TL3W4fQVBM&vssid=l) ; */
+}
+.navInp:focus {
+  outline-color: rgb(0, 110, 255);
+}
+.navSec3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: ;
+}
+.trey {
+  width: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-right: 40px;
+}
+.sideBar{
+    position: fixed;
+    top: 56px;
+    left: 0;
+    width: 216px;
+    height: 93%;
+    display: flex;  
+    flex-direction: row;
+    padding: 12px;
+    flex-wrap: wrap;
+    overflow: hidden;
+    transition: 0.9s;
+}
+.sideBar:hover{
+    overflow: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(127, 128, 127) #0f0f0f ;
+    padding-bottom: 40px;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: 40px;
+    align-items: center;
+    border-radius: 8px;
+    transition: 0.03s;
+}
+.menu:hover{
+    background-color: rgb(29, 27, 27);
+}
+#icon2{
+  font-size: larger;
+  padding: 0px 12px;
+  cursor: pointer;
+  color: whitesmoke;
+}
+.icon2tex{
+    
+  font-size: 14px;
+  padding: 0px 12px;
+  cursor: pointer;
+  color: whitesmoke;
+}
+.hrule{
+    border: 0.09px solid rgb(39, 38, 38);
+    margin: 11px 0px;
+}
+.lasTex{
+
+  font-size: 12px;
+  margin-top: 40px;
+  padding: 0px 12px;
+  cursor: pointer;
+  color: rgb(92, 84, 84);
+}
