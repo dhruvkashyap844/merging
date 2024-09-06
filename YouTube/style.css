@@ -2,6 +2,7 @@
   padding: 0%;
   margin: 0%;
   font-family: Arial, Helvetica, sans-serif;
+  scrollbar-width: none;
 }
 p{
     display: inline-block;
@@ -24,7 +25,6 @@ nav {
   align-items: center;
   padding: 0px 16px;
   justify-content: space-between;
-  background-color: rgb(69, 89, 112);
 }
 .navSec1 {
   display: flex;
@@ -39,7 +39,7 @@ nav {
   color: whitesmoke;
 }
 #icon1:hover {
-  background-color: gray;
+  background-color: rgb(39, 38, 38);
 }
 .mainIcon {
   width: 90px;
@@ -50,15 +50,15 @@ nav {
 .navSec2 {
 }
 .navInp {
-  padding: 8px 10px;
+  padding: 11px 300px 11px 13px ; 
   border-radius: 20px;
   outline-style: none;
   border: none;
   outline: 1px solid rgb(71, 70, 70);
-  font-size: large;
+  font-size: 15px;
   font-weight: 500;
   background-color: #161515;
-  color: rgb(255, 254, 253);
+  color: rgb(255, 255, 255);
   /* background-image: url(https://www.google.com/search?q=search+logo&oq=sea&gs_lcrp=EgZjaHJvbWUqDAgCEAAYQxiABBiKBTIGCAAQRRg5MgwIARAAGEMYgAQYigUyDAgCEAAYQxiABBiKBTIMCAMQABhDGIAEGIoFMgwIBBAAGEMYgAQYigUyBggFEEUYPTIGCAYQRRg8MgYIBxBFGDzSAQgyNDcxajBqN6gCCLACAQ&sourceid=chrome&ie=UTF-8#vhid=c2g7TL3W4fQVBM&vssid=l) ; */
 }
 .navInp:focus {
@@ -131,4 +131,63 @@ nav {
   padding: 0px 12px;
   cursor: pointer;
   color: rgb(92, 84, 84);
+}
+.topSlider{
+  position: fixed;
+  top: 56px;
+  left: 220px;
+  margin-left: 40px;
+  width: 82%;
+  display: flex;
+  align-items: center;
+  overflow: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: rgb(127, 128, 127) #0f0f0f ;
+  padding-right: 260px;
+  flex-wrap: nowrap;
+  scrollbar-width: none;
+}
+.subSlide{
+  padding: 8px 12px;
+  margin: 12px 12px 12px 0px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(54, 51, 51);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.subSlide:hover{
+  background-color: #474545;
+}
+.mainContent{
+  position: absolute;
+  top: 100px;
+  left: 220px;
+  margin-left: 40px;
+  width: 81.5%;
+  height: 84.7%;
+  display: flex;
+  padding-top: 24px;
+}
+.mainImg{
+  width: 367px;
+  height: 206px;
+  border-radius: 13px;
+  transition: 0.1s;
+}
+.mainImg:hover{
+  opacity: 0.4;
+  filter: blur(1px);
+}
+
+.data{
+  width: 367px;
+  height: 206px;;
+  padding-top: 15px;
+  padding-left: 5px;
 }
