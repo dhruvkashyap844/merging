@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body{
+        overflow: scroll;
+    }
+    nav{
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 80px;
+        background-color: rgb(37, 122, 99);
+        display: flex;
+        justify-content: space-between  ;
+        align-items: center;
+
+    }
+    .tex1{
+        font-size: 30px;
+        font-weight: 800;
+        display: flex;
+        justify-content: start;
+        padding-left: 80px;
+    }
+    .uList{
+        display: flex;
+        /* padding-top: 100px; */
+        padding-right: 80px;
+    }
+    .listItem{
+        list-style-type: none;   
+        padding: 0px 12px;
+        font-size: 19px;
+        font-weight: 800;
+    }
+    #drop{
+        transition: 0.4s;
+    }
+    #drop:hover .dropList1{
+        color: aqua;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: absolute;
+        width: 120px;
+        
+
+    }
+    .dropList1{
+        background-color: rgb(37, 122, 99);
+        list-style-type: none;
+        display: none;
+        
+
+        
+    }
+    #drop:hover .dropList2{
+        color: aqua;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: absolute;
+        width: 120px;
+        
+
+    }
+    .dropList2{
+        background-color: rgb(37, 122, 99);
+        list-style-type: none;
+        display: none;
+        height: 150px;
+        left: 100px;
+
+        
+    }
+    .uListpages{
+        list-style-type:none ;
+        color: antiquewhite;
+        font-size: 17px;
+        font-weight: 500;
+    }
+    .uli {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 150px;
+        padding-top:40px ;
+    }
+
+</style>    
+<body>
+    <nav>
+            <div class="tex1">  L0 go</div>
+            
+    <ul class="uList">
+        <li class="listItem">Home</li>
+        <li class="listItem">Contact</li>
+        <li class="listItem" id="drop" >Pages 
+        <div class="dropList1">
+            <ul class="uli"> 
+                <li class="uListpages">Home 1</li>
+                <li class="uListpages">Home 2</li>
+                <li class="uListpages" id="drop2">Home 3
+                    <div class="dropList2">
+                        <ul class="uli">
+                            <li class="uListpages">Home 1</li>
+                            <li class="uListpages">Home 2</li>
+                            <li class="uListpages">Home 3</li>
+                            <li class="uListpages">Home 4</li>
+                        </ul>
+                    </div></li>
+                <li class="uListpages">Home 4</li>
+            </ul>
+        </div>
+        </li>
+        <li class="listItem">processed</li>
+        <li class="listItem">Pizza</li>
+    </ul>
+
+    </nav>
+</body>
+</html>
