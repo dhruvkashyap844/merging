@@ -26,6 +26,7 @@ nav {
   padding: 0px 16px;
   justify-content: space-between;
   background-color: #0f0f0f;
+  z-index: 1;
 }
 .navSec1 {
   display: flex;
@@ -148,6 +149,7 @@ nav {
   flex-wrap: nowrap;
   scrollbar-width: none;
   background-color: #0f0f0f;
+  z-index: 1;
 }
 .subSlide{
   padding: 8px 12px;
@@ -197,7 +199,6 @@ nav {
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  z-index: -1;
 }
 
 .grid1{
