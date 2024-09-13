@@ -12,6 +12,12 @@ p{
 .container{
 
 }
+hr{
+  border: none;
+  height: 1.1px;
+  color: #333;
+  background-color: #333;
+}
 body {
   background-color: #0f0f0f;
 }
@@ -52,7 +58,7 @@ nav {
 .navSec2 {
 }
 .navInp {
-  padding: 11px 300px 11px 13px ; 
+  padding: 11px 300px 11px 13px ;
   border-radius: 20px;
   outline-style: none;
   border: none;
@@ -70,7 +76,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: ;
 }
 .trey {
   width: 200px;
@@ -84,10 +89,9 @@ nav {
     left: 0;
     width: 216px;
     height: 93%;
-    display: flex;  
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     padding: 12px;
-    flex-wrap: wrap;
     overflow: hidden;
     transition: 0.9s;
 }
@@ -143,23 +147,24 @@ nav {
   display: flex;
   align-items: center;
   overflow: scroll;
-  scrollbar-width: thin;
+  /* scrollbar-width: thin; */
   scrollbar-color: rgb(127, 128, 127) #0f0f0f ;
   padding-right: 260px;
   flex-wrap: nowrap;
   scrollbar-width: none;
   background-color: #0f0f0f;
   z-index: 1;
+  /* margin-top: 30px; */
 }
 .subSlide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 8px 12px;
   margin: 12px 12px 12px 0px;
   color: rgb(255, 255, 255);
   background-color: rgb(54, 51, 51);
   border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: small;
   font-weight: 700;
   cursor: pointer;
@@ -228,4 +233,112 @@ nav {
 }
 .inTex:hover{
   color: #b6b4b4;
+}
+.MicContainer{
+  display: inline-block;
+  position: relative;
+  
+}
+.Mic{
+  position: absolute;
+  display: none;
+  color: white;
+  background-color: rgb(58, 56, 54);
+  font-size: small;
+  padding: 3px 4px ;
+  border-radius: 6px;
+}
+.MicContainer:hover .Mic{
+  display: inline-block;
+  top: 60px;
+  left: -17px;
+}
+
+
+
+
+.shortContent{
+  position: relative;
+  width: 1135px;
+  height: 478px;
+  display: flex;
+  padding-top: 24px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.sIcon{
+  width: 18px;
+  height: 20px;
+  padding-left: 15px;
+}
+.shortNav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 7%;
+  width: 100%;
+  margin-bottom: 18px;
+  margin-top: 30px;
+}
+.sIcontex{
+  margin-left: 8px;
+  font-weight: 600;
+  font-size: large;
+  color: rgb(255, 255, 255);
+}
+#sCross{
+  font-size: 22px;
+  color: white;
+  border-radius: 20px;
+  padding: 7px 10px;
+  transition: 0.2s;
+}
+#sCross:hover{
+  background-color: #333;
+}
+.sImage{
+  width: 214px;
+  height: 379px;
+  border-radius: 13px;
+  transition: 0.1s;
+}
+
+.ShortData{
+  width: 244px;
+  /* padding-top: 15px;
+  padding-left: 5px; */
+  padding: 13px 0px 20px;
+  cursor: pointer;
+  display: block;
+  flex-direction: column;
+}
+
+.shortGrid1{
+  padding-top: 8px;
+  display: grid;
+  width: 220px;
+  grid-template-columns: 3fr 0fr;
+}
+#shortIconMain{
+  color: rgb(150, 139, 139);
+  display: flex;
+  justify-content: center;
+  padding-right: 16px;
+  border-radius: 20px;
+  padding: 7px 13px;
+}
+#shortIconMain:hover{
+  background-color: #333;
+}
+.dataImgtime{
+  position: relative;
+  top: -30px;
+  left: 320px;
+}
+.timeEdit{
+  background-color: #000000a4;
+  color: white;
+  border-radius: 4px;
+  padding: 2px 4px;
+  font-size: 12px;
 }
