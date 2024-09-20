@@ -336,6 +336,9 @@ nav {
   flex-wrap: wrap;
   flex-direction: row;
 }
+.shortContainer{
+  display:flex;
+}
 .sIcon{
   width: 18px;
   height: 20px;
