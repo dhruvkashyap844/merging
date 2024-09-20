@@ -1,0 +1,174 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Style Search Bar</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f9f9f9;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .search-container {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ccc;
+      border-radius: 24px;
+      padding: 5px;
+      background-color: #fff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    .search-container input[type="text"] {
+      border: none;
+      outline: none;
+      padding: 100px;
+      border-radius: 24px;
+      width: 300px;
+    }
+    .search-container button {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      transition: background-color 0.3s ease;
+    }
+    .search-container button:hover {
+      background-color: #f1f1f1;
+    }
+    .search-container button img {
+      width: 20px;
+      height: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="search-container">
+    <input type="text" placeholder="Search">
+    <button>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/1024px-Magnifying_glass_icon.svg.png" alt="Search Icon">
+    </button>
+  </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Video Card</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .video-card {
+      width: 350px;
+      background-color: #2e2a2a;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .video-card:hover {
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .thumbnail {
+      position: relative;
+    }
+
+    .thumbnail img {
+      width: 100%;
+      display: block;
+    }
+
+    .duration {
+      position: absolute;
+      bottom: 8px;
+      right: 8px;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      padding: 2px 4px;
+      border-radius: 3px;
+      font-size: 12px;
+    }
+
+    .video-info {
+      display: flex;
+      padding: 12px;
+    }
+
+    .channel-image {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 12px;
+    }
+
+    .channel-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .video-details {
+      flex-grow: 1;
+    }
+
+    .video-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin: 0;
+      line-height: 1.4;
+    }
+
+    .channel-name {
+      color: #606060;
+      font-size: 14px;
+      margin: 4px 0;
+    }
+
+    .video-stats {
+      color: #606060;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="video-card">
+    <div class="thumbnail">
+      <img src="https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="Video Thumbnail">
+      <div class="duration">10:15</div>
+    </div>
+    <div class="video-info">
+      <div class="channel-image">
+        <img src="https://gratisography.com/wp-content/uploads/2024/01/gratisography-cyber-kitty-800x525.jpg" alt="Channel Image">
+      </div>
+      <div class="video-details">
+        <p class="video-title">How to Create a YouTube Video Card Using HTML and CSS</p>
+        <p class="channel-name">CodeWithMe</p>
+        <p class="video-stats">1.2M views • 2 weeks ago</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
