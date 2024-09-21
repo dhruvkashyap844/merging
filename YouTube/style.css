@@ -483,3 +483,6 @@ nav {
   width: 100px;
   height: 20px;
 }
+.bottomBar{
+  display: none;
+}

@@ -152,6 +152,18 @@
   grid-template-columns: 1.2fr 5.8fr 2fr;
   width: 360px;
   }
+  .dateImg{
+    position: absolute;
+    display: inline-block;
+    bottom: 10px;
+    left: 380px;
+    color: white;
+    padding: 2px 4px;
+    background-color: #150808a4;
+    border-radius: 5px;
+    font-size: 13px;
+  }
+  
   .shortGrid1{
     display: none;
   }
