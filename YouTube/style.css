@@ -33,7 +33,10 @@ nav {
   padding: 0px 16px;
   justify-content: space-between;
   background-color: #0f0f0f;
-  z-index: 1;
+  z-index: 200;
+}
+.bottomBar{
+  display: none;
 }
 .navSec1 {
   display: flex;
@@ -208,7 +211,7 @@ nav {
   flex-wrap: nowrap;
   scrollbar-width: none;
   background-color: #0f0f0f;
-  /* z-index: ; */
+  z-index: 100;
   /* margin-top: 30px; */
   
 }
@@ -244,9 +247,20 @@ nav {
   transition: 0.1s;
 }
 .mainImg:hover{
-  /* opacity: 0.4;
-  filter: blur(1px);
-  z-index: 0; */
+  opacity: 0.2;
+  /* filter: blur(1px); */
+  /* filter: brightness(300%); */
+  /* filter: contrast(180%); */
+  /* filter: hue-rotate(180deg) */
+  /* filter: grayscale(100%); */
+  /* filter: invert(100%);  */
+  /* filter: opacity(99%); */
+  /* filter: saturate(172%); */
+  /* filter: drop-shadow(0px 0px 50px #0867eb); */
+  /* filter: sepia(100%); */
+  /* box-shadow: 0px 0px 100px #a1a19f; */
+  z-index: 0;
+  filter: drop-shadow(0px 120px 0px rgb(255, 255, 255));
 }
 
 .data{
