@@ -52,6 +52,66 @@
     z-index: 1;
   }
   
+.navSec2 {
+  display: flex;
+  position: relative;
+  left: 240px;
+  justify-content: end;
+}
+.search-container {
+  display: flex;
+  /* padding: 0px; */
+  border: none;
+  width: 30px;
+  height: 30px;
+}
+
+.search-container input[type="text"] {
+  display: none;
+  width: 30px;
+  height: 30px;
+}
+.search-container button img {
+  position: absolute;
+  filter: invert(100%); 
+  width: 20px;
+  height: 20px;
+
+}
+
+.search-container button {
+  display: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.search-container input[type="text"]:focus + button,
+.search-container:focus-within {
+  display: none;
+  border-color: #00000000; /* Border color changes to blue on focus */
+}
+.navInp {
+  display: none;
+  padding: 11px 300px 11px 13px ;
+  border-radius: 20px;
+  outline-style: none;
+  border: none;
+  outline: 1px solid rgb(71, 70, 70);
+  font-size: 15px;
+  font-weight: 500;
+  background-color: #161515;
+  color: rgb(255, 255, 255);
+  /* background-image: url(https://www.google.com/search?q=search+logo&oq=sea&gs_lcrp=EgZjaHJvbWUqDAgCEAAYQxiABBiKBTIGCAAQRRg5MgwIARAAGEMYgAQYigUyDAgCEAAYQxiABBiKBTIMCAMQABhDGIAEGIoFMgwIBBAAGEMYgAQYigUyBggFEEUYPTIGCAYQRRg8MgYIBxBFGDzSAQgyNDcxajBqN6gCCLACAQ&sourceid=chrome&ie=UTF-8#vhid=c2g7TL3W4fQVBM&vssid=l) ; */
+}
+
+
 
 
 .bottomBar{
@@ -198,5 +258,22 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+  }
+  .dateImg{
+    position: absolute;
+    display: inline-block;
+    bottom: 10px;
+    left: 380px;
+    color: white;
+    padding: 2px 4px;
+    background-color: #150808a4;
+    border-radius: 5px;
+    font-size: 13px;
+  }
+  .grid1{
+    padding-top: 8px;
+    display: grid;
+    grid-template-columns: 1.2fr 5.8fr 2fr;
+    width: 400px;
   }
 }
