@@ -112,8 +112,18 @@
 }
 
 
-
-
+.shortContent{
+  position: relative;
+  width: 1135px;
+  height: 478px;
+  display: flex;
+  padding-top: 24px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.shortContainer{
+  display:flex;
+}
 .bottomBar{
   position: fixed;
   bottom: -1px;
@@ -232,11 +242,13 @@
     overflow: scroll;
     scrollbar-width: none;
     padding-left: 12px;
+    flex-wrap: wrap;
+    padding-bottom: 90px;
   }
   .ShortData{
     display: flex;
-    width: 132px;
-    height: 232px;
+    width: 195px;
+    height: 292px;
     /* padding-top: 15px;
     padding-left: 5px; */
     padding: 0px 13px 10px 0px ;
@@ -246,8 +258,8 @@
   }
   .sImage{
     display: flex;
-    width: 132px;
-    height: 232px;
+    width: 195px;
+    height: 292px;
     border-radius: 8px;
     transition: 0.1s;
   }
